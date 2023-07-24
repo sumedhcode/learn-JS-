@@ -35,7 +35,7 @@ const myBirthDate = "4 May 2002";
 // variable declared with const cannot be changed or reassigned like var and let
 myBirthDate = "9 March 2005"; // this will give an Type error
 
-// SUMMARY
+// SUMMAURY
 // dont use var for declaring variables always use const keyword
 // if the value is changing use let keyword
 // let and const keyword have an block scope
