@@ -1,26 +1,42 @@
-// There are 7 types of data in JS
+// There are 2 datatypes in JS
+// 1-Primitive datatypes
+// 2-Reference(Non-primitive) datatypes
 
-// String
-let myName = "Sumedh"; // defined in double quotes.
+// There are 7 types in Primitive datatypes:
+
+// 1-String
+let myName = "Sumedh"; // defined in double quotes.                     
 const myLastName = 'Shewale'; // also can define in single quotes.
 let myCity = new String("Pune"); // also define like this
 
-// Number
+// 2-Number
 let myAge = 21;
 const phoneNumber = new Number(9129941706);
 
-// Boolean
+// 3-Boolean
 const isProgrammer = true;
 const playBasketball = new Boolean(false);
 
-// Null 
+// 4-Null 
 const myBrother = null; // NOT EXIST
 
-// Undefined
+// 5-Undefined
 const myWife = undefined;
 let myWifeName; // output is undefined
 
-// WILL NOT DISCUSS ABOUT 'BigInt' AND 'Symbol' DATATYPES
+// 6-BigInt
+let bigNumber = 45090952045034341n
+console.log(typeof bigNumber); // output bigint
+
+// 7-Symbol 
+const id = Symbol('123');
+const anotherId = Symbol('123'); 
+// this two are different symbols
+console.log(typeof id); // => symbol
+console.log(anotherId); // => Symbol(123);
+console.log(id === anotherId); // => false
+console.log(id + anotherId); // => TypeError
+
 
 // SUMMAURY
 // 1 - string => charaters that are strung together in single thread eg, "Sumedh", "loves", "cars" etc.
@@ -29,4 +45,9 @@ let myWifeName; // output is undefined
 // 4 - null => special keyword that represent non-existent value not 0.
 // 5 - undefined => a value that is not defined yet.
 // 6 - bigInt => used to store big integers like- 14541451524515452145, 94354544623656640.
-// 7 - symbol => we used symbols to store unique values mostly used in react.
+// 7 - symbol => we used symbols to store unique values mostly used to identify components.
+
+// Reference Datatypes
+
+// 1-Arrays
+const myInfo = ['Sumedh', '20', false, null, 'Shewale']; // collection of data
