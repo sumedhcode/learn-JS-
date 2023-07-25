@@ -3,17 +3,17 @@
 // Number to String conversion
 let anyNumber = 3595;
 let numberInString = String(anyNumber);
-// console.log(typeof numberInString); // => string
+console.log(typeof numberInString); // => string
 
 // Number to Boolean conversion
 let number2 = 393;
 let numberInBoolean = Boolean(number2);
-// console.log(numberInBoolean); // => true
-// console.log(typeof numberInBoolean); // => boolean
+console.log(numberInBoolean); // => true
+console.log(typeof numberInBoolean); // => boolean
 
 number2 = 0; // reassigning the value
 numberInBoolean = Boolean(number2);
-// console.log(numberInBoolean); // => false
+console.log(numberInBoolean); // => false
 
 // Boolean to Number conversion
 let bool1 = true;

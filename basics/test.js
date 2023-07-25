@@ -1,1 +1,4 @@
-console.log('Sumedh');
+let myName = "Sumedh"
+console.log(myName);
+
+
