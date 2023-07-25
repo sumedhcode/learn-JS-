@@ -24,6 +24,11 @@ let myTimeStamp = Date.now()
 
 let newDate = new Date();
 
-newDate.toLocaleString('default', {
+newDate.toLocaleString('default', { //indicates that the method should use the default locale of the user's browser 
     weekday: "long",
 })
+
+/* The second argument is an options object used to customize the formatting of the date string. 
+In this case, it specifies { weekday: "long" }, 
+which means we want the output to include the full name of the day of the week 
+(e.g., "Monday", "Tuesday", etc.).*/
