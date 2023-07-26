@@ -1,4 +1,4 @@
-let myName = "Sumedh"
+let myName = "Sumedh";
 console.log(myName);
 
 
