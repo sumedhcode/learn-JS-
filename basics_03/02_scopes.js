@@ -20,7 +20,7 @@ function block(){
 }
 
 // console.log(userName) 
-console.log(secondName) // => secondName is not defined,
+// console.log(secondName) // => secondName is not defined,
 // block()
 
 /* we cannot access even the var becuase in Javascript, 
@@ -28,3 +28,16 @@ variables declared with the var keyword have function scope,
 not block scope. */
 
 // nested scopes
+
+function bigBlock(){
+    let vanillaIcecream = "vanilla"
+    
+    function smallBlock(){
+        let choclateIcecream = "choclate"
+        console.log(vanillaIcecream); // small can get the vanilla :) 
+        
+    }
+    console.log(choclateIcecream); // => choclateIcecream is not defined
+}
+
+bigBlock()
