@@ -38,4 +38,9 @@ function myFunction() {
     // console.log(`Wish me at ${myBirthdate}`);
 }
 
+// this in a regular function
+function myNewFunc(){
+    console.log(this);
+}
 // myFunction();
+myNewFunc() // => return some objects with lot of properties and values
