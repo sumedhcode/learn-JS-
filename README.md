@@ -23,8 +23,8 @@ This repository contains various code examples, exercises, and projects that I'v
 If you have any questions, suggestions, or just want to connect, feel free to reach out:
 
 - Email: uxsumedh@gmail.com
-- GitHub: [My Github](https://github.com/sumedhcode)
-- Twitter: [Twitter](https://twitter.com/SumedhUx)
+- GitHub: [sumedhcode](https://github.com/sumedhcode)
+- Twitter: [sumedhUx](https://twitter.com/SumedhUx)
 
 Happy coding and learning! 😊👩‍💻👨‍💻
 
