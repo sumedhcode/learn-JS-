@@ -79,10 +79,10 @@ let productWarrentyYears = 1
 
 if(productWarrentyYears < 5 && productWarrentyYears > 1){
     console.log("decent quality");
-}else if(productWarrentyYears === 5){
+} else if(productWarrentyYears === 5){
     console.log("good quality");
-}else if(productWarrentyYears > 5){
+} else if(productWarrentyYears > 5){
     console.log("great quality");
-} else{
-    console.log("bad quality :(");
+} else{  
+    console.log("bad quality :("); // if any condition matches that code block will be execute
 }
