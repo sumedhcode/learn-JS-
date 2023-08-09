@@ -61,7 +61,7 @@ let haveCoupenCode = true
 
 // AND OPERATOR
 if(productPrice > 1000 && isConfirm) {
-    console.log("free delivery"); // only outputs when all the conditions evaluates true 
+    console.log("Free delivery"); // only outputs when all the conditions evaluates true 
 }
 
 // OR OPERATOR
