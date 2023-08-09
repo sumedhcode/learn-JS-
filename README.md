@@ -9,7 +9,7 @@ I have been learning JavaScript from the fantastic tutorials provided by [Hitesh
 ## Learning Resources
 
 - **YouTube Channel:** [Chai aur Code](https://www.youtube.com/@chaiaurcode)
-- **YouTube Channel:** [Hitesh Choudhary main channel](https://www.youtube.com/@HiteshChoudharydotcom)
+- **Main Channel:** [Hitesh Choudhary](https://www.youtube.com/@HiteshChoudharydotcom)
 - **GitHub Account:** [Hitesh Choudhary on GitHub](https://github.com/hiteshchoudhary)
 
 In addition to the YouTube tutorials, you can also find useful code examples and projects on Hitesh's GitHub account.
