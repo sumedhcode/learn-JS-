@@ -16,7 +16,7 @@ In addition to the YouTube tutorials, you can also find useful code examples and
 
 ## Repository Contents
 
-This repository contains various code examples, exercises, and projects that I've worked on during my JavaScript learning journey. You'll find folders for different topics and concepts, each accompanied by explanations and code samples. Feel free to modify, experiment, and learn from the code.
+This repository contains various code examples, exercises, and projects that I've worked on during my JavaScript learning journey. You'll find folders for different topics and concepts, each accompanied by explanations and code samples. so far i covered upto control flow (conditionals), Feel free to modify, experiment, and learn from the code.
 
 ## Contact Me
 
