@@ -3,7 +3,7 @@
 // JSON is just short-hand of JavaScript Object Notation, most of the api sends the data in this format.
 
 
-// comes in key value pairs and in the curly braces just like an javascript object 
+// comes in key value pairs and in the curly braces just like an javascript object:
 
 // {
 //     "username": "kristinward",
@@ -40,6 +40,6 @@ console.log(userName); // => 'sumedhcode', more convenient to use
 
 const {userName: name} = myGithub; // redeclared the property to simplify further
 
-console.log(name); // => '{same}'
+console.log(name); // => 'sumedhcode'
 
 console.log(myGithub); // =>  userName: 'sumedhcode', original obeject does not change
