@@ -15,3 +15,26 @@ carArr.forEach(function (element) { // A callback function is a function passed 
 
 // accessing index and complete array
 carArr.forEach( (element, index, array) => console.log(`${element}, ${index}, ${array}`))
+
+
+// iterating on array of objects and accessing object properties
+const myCar = [
+    {
+        carName: "ferrari",
+        power: "speed"
+    },
+    {
+        carName: "swift",
+        power: "mileage"
+    },
+    {
+        carName: "thar",
+        power: "height"
+    },
+    
+]
+
+myCoding.forEach( (item) => {
+    
+    console.log(item.power);
+} )
