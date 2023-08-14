@@ -5,7 +5,7 @@ const myTotal = myNums.reduce(function (accumulator, currentvalue) { //
     return acc + currval
 }, 0) // initializing the accumulatoe
 
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0) // arrow function
+// const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0) // arrow function
 
 console.log(myTotal);
 
