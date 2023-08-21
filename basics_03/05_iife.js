@@ -4,7 +4,7 @@
 
 /* in IIFE we can also create a private scope to work with 
 and also declare private variables and methods in it 
-which is limited to the IIFE */
+which is limited to the scope */
 
 (function immediateFunction(){
     // named function

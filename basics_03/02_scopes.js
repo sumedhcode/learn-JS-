@@ -2,7 +2,7 @@
 // block scope or just scope is nothing but the curly braces- {} 
 
 if(true){
-    var a = "Sumedh" // cannot access outside of the block
+    var a = "Sumedh" // can access outside of the block
     let b = "Varun"  // cannot access outside of the block
     const c = "Nikhil"
 }
