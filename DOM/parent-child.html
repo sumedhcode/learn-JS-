@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(22, 22, 22); color: white;">
+    <div class = "parent">
+        <div class="child">Jan</div>  <!-- line break also considered as text nodes-->
+        <div class="child">Feb</div>
+        <div class="child">March</div>
+        <div class="child">April</div>
+    </div>
+</body>
+
+<script>
+    // parent to children traversing
+   const parent = document.querySelector('.parent')
+//    console.log(parent.children);
+//    console.log(parent.lastElementChild);
+//    console.log(parent.firstElementChild);
+//    console.log(parent.children[1].innerHTML);
+      console.log("NODES: ", parent.childNodes); //  gives the node list of length 9 which means that this also includes the text nodes which are line break 
+   
+   for (let i = 0; i < parent.children.length; i++) {
+    // console.log(parent.children[i]);
+   }
+//    traversing from child to parent
+   const child = document.querySelector('.child')
+   console.log(child.parentElement);
+   console.log(child.nextElementSibling);
+//    console.log(child.nextSibling);
+</script>
+</html>
