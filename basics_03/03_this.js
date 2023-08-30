@@ -26,7 +26,7 @@ let anyObject = {
     myAge: 21,
     myCity: "Pune",
     myIntro: function(){
-        console.log(`Hello my name is ${this.myName}`);
+        console.log(`Hello my name is ${this.myName}`); // here this refers to the current object context 'anyObject'
     }
 }
 
@@ -35,7 +35,7 @@ anyObject.myIntro() // When a function is called as a method of an object, this 
 
 function myFunction() {
     let myBirthdate = "4th may"
-    // console.log(`Wish me at ${myBirthdate}`);
+    console.log(`Wish me at ${this.myBirthdate}`); // => 4th may
 }
 
 // this in a regular function

@@ -35,6 +35,6 @@ const myCar = [
 ]
 
 myCoding.forEach( (item) => {
-    
-    console.log(item.power);
+
+    console.log(item.power); // => speed
 } )

@@ -1,16 +1,16 @@
 
 // syntax
-reduce(callbackFn)
-reduce(callbackFn, initialValue)
+// reduce(callbackFn)
+// reduce(callbackFn, initialValue)
 
 
-const myNums = [1, 2, 3] 
+const myNums = [1, 2, 3, 4, 5] 
  
 
 
-const myTotal = myNums.reduce(function (accumulator, currentvalue) { // 
+const myTotal = myNums.reduce(function (accumulator, currentvalue) { // takes two parameter, 
     console.log(`acc: ${accumulator} and currval: ${currentvalue}`);
-    return acc + currval
+    return accumulator + currentvalue
 }, 0) // initializing the accumulator
 
 /*The reducer walks through the array element-by-element, at each step adding the current array value to the result from 
@@ -42,4 +42,4 @@ const shoppingCart = [
 
 const priceToPay = shoppingCart.reduce((acc, item) => acc + item.price, 0)
 
-console.log(priceToPay);
+// console.log(priceToPay);

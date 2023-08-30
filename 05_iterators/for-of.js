@@ -1,7 +1,6 @@
 // for of
 
-/*The Map object holds key-value pairs and remembers the original insertion order of the keys. 
- Any value (both objects and primitive values) may be used as either a key or a value. */
+
 
 // syntax
 
@@ -22,6 +21,9 @@ for (const greet of greetings) {
 }
 
 // Maps
+
+/*The Map object holds key-value pairs and remembers the original insertion order of the keys. 
+ Any value (both objects and primitive values) may be used as either a key or a value. */
 
 const map = new Map()
 map.set('IN', "India")
@@ -55,6 +57,6 @@ const gameObject = {
 }
 
 for (const [key, value] of myObject) {
-    console.log(key, ':-', value); // => myOBject is not iterable, we have different loop for object
+    console.log(key, ':-', value); // => gameObject is not iterable, we have different loop for object
     
 }
