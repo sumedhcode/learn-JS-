@@ -21,7 +21,8 @@
 </body>
 
 <script>
-    const body = document.querySelector('body')
+    // const body = document.querySelector('body')
+    
     // body.addEventListener('click', (e) => console.log(e))
     // body.addEventListener('click', (e) => console.log(e.clientX))
     // body.addEventListener('click', (e) => console.log(e.target))
@@ -43,4 +44,14 @@
     // const japan = document.getElementById('japan')
     // japan.addEventListener('click', (e) => console.log('japan clicked'), false)
 
+
+document.querySelector('#images').addEventListener('click', function(e){
+    console.log(e.target.tagName)
+    if(e.target.tagName === 'IMG' ){
+        let removeIt = e.target.parentNode
+        console.log(removeIt);
+        // removeIt.remove()
+        removeIt.parentNode.removeChild(removeIt)
+    }
+})
 </script>
