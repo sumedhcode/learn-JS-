@@ -23,6 +23,7 @@
 <script>
     // const body = document.querySelector('body')
     
+    
     // body.addEventListener('click', (e) => console.log(e))
     // body.addEventListener('click', (e) => console.log(e.clientX))
     // body.addEventListener('click', (e) => console.log(e.target))
@@ -39,10 +40,17 @@
     
 
     // const images = document.getElementById('images')
-    // images.addEventListener('click', (e) => {console.log('ul clicked')}, false)
+    // images.addEventListener('click', function(e){
+    //     console.log('ul clicked')
+    // }, false) // if we click on this element the event will be propagate to the ul also this bottom-up behavior is known as bubbling up 
+
 
     // const japan = document.getElementById('japan')
-    // japan.addEventListener('click', (e) => console.log('japan clicked'), false)
+    // japan.addEventListener('click', function(e){
+    //     console.log('japan clicked')
+    //     e.stopPropagation() // stop the event propagation
+    // }, false) // method default behavior is false we can set it true if set it true the behavior will be called capturing
+
 
 
 document.querySelector('#images').addEventListener('click', function(e){
@@ -50,8 +58,8 @@ document.querySelector('#images').addEventListener('click', function(e){
     if(e.target.tagName === 'IMG' ){
         let removeIt = e.target.parentNode
         console.log(removeIt);
-        // removeIt.remove()
-        // removeIt.parentNode.removeChild(removeIt)
+        removeIt.remove() // remove anything within the element
+        removeIt.parentNode.removeChild(removeIt) // method to remove the child
     }
 })
 </script>
