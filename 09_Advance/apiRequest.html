@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;">
+    0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete.
+</body>
+
+<script>
+    // #API request
+
+    /* API's are the common medium to talk two systems or two programming languages with each other
+       API stands for Application Programming Interface, which provides us interface to talk with
+       other application to take their service or data  */ // =>
+
+       /* we get this data through an request and we get a response in the JSON format which we use
+          in our application*/
+const xhr = new XMLHttpRequest() // its an web API which used to interact with servers
+// console.log(xhr);
+console.log(xhr.readyState); // => 0
+const url = 'https://api.github.com/users/sumedhcode'
+
+const request = xhr.open('GET', url) //
+// console.log(request);
+// console.log(xhr.readyState); // => 1, opened is called 
+// const sent = xhr.send()
+// console.log(sent);
+console.log(xhr.readyState);
+
+let responseData;
+
+
+xhr.onreadystatechange = function(){ //The readystatechange event is fired whenever the readyState property of the XMLHttpRequest changes.
+    console.log(xhr.readyState); // => 2, 3, 4 DONE!!
+    if(xhr.readyState === 4){
+        responseData = JSON.parse(this.responseText) // responseText is a property of XMLHttpRequest() object
+        console.log(responseData);
+
+        const id = responseData.login
+        const avatar = responseData.avatar_url
+
+        // console.log(id);
+        // console.log(avatar);
+
+        const div = document.createElement('div')
+        div.className = 'card'
+        div.style.backgroundColor = 'white'
+        div.style.borderRadius = '20px';
+        div.style.padding = '16px'
+        div.style.width = '250px'
+        div.style.height = '300px'
+        div.id = 'myCard'
+        div.innerHTML = `<img src= ${avatar} alt="Description" style=" width: 250px;"> <br> <p>github id: ${id}</p>`
+
+        document.body.appendChild(div)
+
+        
+        // const img = document.createElement('img')
+        // img.className = 'avatar'
+        // img.textContent
+        // div.appendChild(img);
+        // img.style.width = '100px'
+        // <img src="image.jpg" alt="Description" style="height: 200px; width: 300px;">
+
+
+    } else{
+        console.log("error in the request");
+    } 
+}
+
+xhr.send()
+
+
+</script>
+</html>
