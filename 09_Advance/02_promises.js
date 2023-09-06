@@ -77,3 +77,14 @@ async function consumePromiseFive(){
     }
 }
 consumePromiseFive()
+
+fetch('https://api.github.com/users/sumedhcode') // using fetch method
+.then(function(response){
+    return response.json() // converting text response to json
+})
+.then(function(data){
+    console.log(data.name); // this printed first even though is excuted in last
+})
+.catch(function(error){  // if the request is rejected or some error occured this block will execute
+    console.log("Something went wrong ", error);
+})
