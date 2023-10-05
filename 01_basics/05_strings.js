@@ -5,11 +5,11 @@ let lastName = "  Sumedha   ";
 // console.log(myName);
 
 // methods and properties of strings
-// console.log(myName.length);
-// console.log(myName.toUpperCase());
-// console.log(myName.charAt(3));
-// console.log(myName.concat(" Shewale"));
-// console.log(myName.padEnd(10, "."));
+// console.log(myName.length); // => 13
+// console.log(myName.toUpperCase()); // => SUMEDH
+// console.log(myName.charAt(3)); // => e
+// console.log(myName.concat(" Shewale")); // => Sumedh       Shewale
+console.log(myName.padEnd(15, ".")); // => => Sumedh       ..
 // console.log(myName.padStart(10, "."));
 // console.log(myName.includes("medh"));
 // console.log(myName.indexOf('me'));

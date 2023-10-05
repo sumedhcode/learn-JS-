@@ -13,8 +13,8 @@ const otherNum = 123.5657;
 // console.log(otherNum.toPrecision(3)); // => 124
 
 const hundreds = 10000000;
-// console.log(hundreds.toLocaleString());
-// console.log(hundreds.toLocaleString('en-IN'));
+console.log(hundreds.toLocaleString()); // => 1,00,00,000
+console.log(hundreds.toLocaleString('en-IN'));
 
 // +++++++++++++++++ Maths ++++++++++++++++++++++
 
