@@ -21,7 +21,7 @@
 </body>
 
 <script>
-    // const body = document.querySelector('body')
+    const body = document.querySelector('body')
     
     
     // body.addEventListener('click', (e) => console.log(e))
@@ -37,6 +37,20 @@
     // body.addEventListener('click', (e) => console.log(e.srcElement.accessKey))
     // body.addEventListener('click', (e) => console.log(e.ctrlKey))
     // body.addEventListener('click', (e) => console.log(e.altKey))
+    // body.addEventListener('click', (e) => console.log(e.bubbles))
+    // body.addEventListener('click', (e) => console.log(e.eventPhase));
+    // body.addEventListener('click', (e) => console.log(e.AT_TARGET));
+    // body.addEventListener('click', (e) => console.log(e.BUBBLING_PHASE));
+    // body.addEventListener('click', (e) => console.log(e.CAPTURING_PHASE));
+    // body.addEventListener('click', (e) => console.log(e.currentTarget));
+    // body.addEventListener('click', (e) => console.log(e.target));
+    // body.addEventListener('click', (e) => console.log(e.view));
+    // body.addEventListener('click', (e) => console.log(e.composed));
+    // body.addEventListener('click', (e) => console.log(e.detail));
+    // body.addEventListener('click', (e) => console.log(e.relatedTarget));
+    // body.addEventListener('click', (e) => console.log(e.getModifierState()));
+
+
     
 
     // const images = document.getElementById('images')
@@ -53,13 +67,13 @@
 
 
 
-document.querySelector('#images').addEventListener('click', function(e){
-    console.log(e.target.tagName)
-    if(e.target.tagName === 'IMG' ){
-        let removeIt = e.target.parentNode
-        console.log(removeIt);
-        removeIt.remove() // remove anything within the element
-        // removeIt.parentNode.removeChild(removeIt) // method to remove the child
-    }
-})
-</script>
+// document.querySelector('#images').addEventListener('click', function(e){
+//     console.log(e.target.tagName)
+//     if(e.target.tagName === 'IMG' ){
+//         let removeIt = e.target.parentNode
+//         console.log(removeIt);
+//         removeIt.remove() // remove anything within the element
+//         // removeIt.parentNode.removeChild(removeIt) // method to remove the child
+//     }
+// })
+// </script>

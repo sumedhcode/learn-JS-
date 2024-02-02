@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: #222222;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <ul class="language">
@@ -13,22 +19,39 @@
 
 <script>
 
-    function addLanguage(newLang){
-        const li = document.createElement('li');
-        li.appendChild(document.createTextNode(newLang))
-        document.querySelector('.language').appendChild(li)
-    }
+// adding or creating an element into list
+function addLang(lang){
 
-    addLanguage('python')
-    addLanguage('golang')
-    addLanguage('java')
-    
-    // Edit the element
-    const secondElement = document.querySelector("li:nth-child(3)")
-    secondElement.replaceWith('rust')
+    // we create an list element and set its value to the string `lang`
+    const li = document.createElement('li'); 
 
-    // Remove the Element
-    const lastElement = document.querySelector("li:last-child");
-    lastElement.remove()
+    // the innerText method is fine for small project but its not most optimised way, becuase innerText or innerHtML method traverse the whole DOM tree, then set the value, so as we call the function it traversing the tree again and again.
+
+    // li.innerText = lang  
+    // in this method we directly append the created text node into the li without any back and forth and traversing the DOM tree
+    li.append(document.createTextNode(`${lang}`));
+
+    // we append it into the ul which is already is in document
+    const ul = document.querySelector('.language')
+    ul.append(li)
+}
+// addLang('python');
+
+// edit the list
+function editList(num, lang){
+const list = document.querySelector(`li:nth-child(${num})`);
+// we have to first create an li element and then inject or replce by default browser replacce with normal text so we have to specify
+const createdlist = document.createElement('li')
+createdlist.append(document.createTextNode(`${lang}`))
+list.replaceWith(createdlist);
+}
+// editList(1, 'java')
+
+// removing the element from the list 
+function removeElement(num){
+    const list = document.querySelector(`li:nth-child(${num})`)
+    list.remove()
+}
+// removeElement(2)
 </script>
 </html>
